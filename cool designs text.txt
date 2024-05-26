@@ -1,0 +1,32 @@
+To make a really cool looking gradient button w tailwind:
+
+```
+<button class="bg-gradient-to-r from-purple-500 to-blue-500 
+hover:from-purple-600 hover:to-blue-600 
+focus:outline-none focus:ring focus:ring-purple-300 
+active:bg-blue-700 px-6 py-3 rounded-lg text-white 
+font-semibold shadow-md 
+transition duration-300 ease-in-out 
+transform hover:scale-105">
+Click Moi!
+</button>
+```
+
+* * *
+
+
+In the PUMA website, on top of the nike base layout, add:
+
+- the aforementioned cool looking button
+    
+- a 3d model of a shoe in the hero element
+    
+- hover zoom effect or other effects in hover
+    
+- dark mode
+    
+- better res images
+    
+- products take you to specific pages
+    
+- T&C takes you to official nike page
