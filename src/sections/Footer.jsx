@@ -20,7 +20,9 @@ const Footer = () => {
                 key={icon}
                 className="flex h-12 w-12 items-center justify-center rounded-full bg-white"
               >
-                <img src={icon.src} alt={icon.alt} width={24} height={24} />
+                <a href={icon.link} target="_blank">
+                  <img src={icon.src} alt={icon.alt} width={24} height={24} />
+                </a>
               </div>
             ))}
           </div>
@@ -35,10 +37,12 @@ const Footer = () => {
               <ul>
                 {section.links.map((link) => (
                   <li
-                    className="mt-3 cursor-pointer font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray"
+                    className="mt-3 cursor-pointer font-montserrat text-base leading-normal text-white-400 hover:text-coral-red"
                     key={link.name}
                   >
-                    <a>{link.name}</a>
+                    <a href="https://www.nike.com/" target="_blank">
+                      <a>{link.name}</a>
+                    </a>
                   </li>
                 ))}
               </ul>

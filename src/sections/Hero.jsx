@@ -4,6 +4,8 @@ import { statistics, shoes } from "../constants";
 import { bigShoe1 } from "../assets/images";
 import ShoeCard from "../components/ShoeCard";
 import { useState } from "react";
+import AnimatedStat from "../components/AnimatedStat";
+// import Shoe3dModel from "../components/Shoe3dModel";
 
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
@@ -27,22 +29,29 @@ const Hero = () => {
           Discover stylish Nike arrivals with quality comfort and innovation for
           your active lifestyle.
         </p>
-        <Button
-          label="Shop Now"
-          iconURL={arrowRight}
-        />
+        <Button label="Shop Now" iconURL={arrowRight} />
 
         <div className="mt-20 flex w-full flex-wrap items-start justify-start gap-16">
           {statistics.map((stat) => (
-            <div key={stat.label}>
-              <p className="font-palanquin text-4xl font-bold">{stat.value}</p>
-              <p className="font-montserrat leading-7 text-slate-gray">
-                {stat.label}
-              </p>
-            </div>
+            <AnimatedStat
+              key={stat.label}
+              value={stat.value}
+              label={stat.label}
+            />
+
+            // OLD CODE WITHOUT ROLLING ANIMATION
+            // <div key={stat.label}>
+            //   <p className="font-palanquin text-4xl font-bold">{stat.value}</p>
+            //   <p className="font-montserrat leading-7 text-slate-gray">
+            //     {stat.label}
+            //   </p>
+            // </div>
           ))}
         </div>
       </div>
+
+      {/* <Shoe3dModel /> */}
+      {/* HERO IMAGE */}
       <div className="relative flex flex-1 items-center justify-center bg-primary bg-hero bg-cover bg-center max-xl:py-40 xl:min-h-screen">
         <img
           src={bigShoeImg}

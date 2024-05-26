@@ -1,4 +1,4 @@
-  import {
+import {
   facebook,
   instagram,
   shieldTick,
@@ -23,9 +23,9 @@ import {
 
 export const navLinks = [
   { href: "#home", label: "Home" },
-  { href: "#about-us", label: "About Us" },
   { href: "#products", label: "Products" },
   { href: "#contact-us", label: "Contact Us" },
+  { href: "#about-us", label: "About Us" },
 ];
 
 export const shoes = [
@@ -44,31 +44,31 @@ export const shoes = [
 ];
 
 export const statistics = [
-  { value: "1k+", label: "Brands" },
-  { value: "1200+", label: "Stores" },
-  { value: "250k+", label: "Customers" },
+  { value: "125", label: "Brands" },
+  { value: "1800", label: "Stores" },
+  { value: "250000", label: "Customers" },
 ];
 
 export const products = [
   {
     imgURL: shoe4,
     name: "Nike Air Jordan-01",
-    price: "$200.20",
+    price: "$299.00",
   },
   {
     imgURL: shoe5,
     name: "Nike Air Jordan-10",
-    price: "$210.20",
+    price: "$349.00",
   },
   {
     imgURL: shoe6,
     name: "Nike Air Jordan-100",
-    price: "$220.20",
+    price: "$199.00",
   },
   {
     imgURL: shoe7,
     name: "Nike Air Jordan-001",
-    price: "$230.20",
+    price: "$189.00",
   },
 ];
 
@@ -140,7 +140,7 @@ export const footerLinks = [
 ];
 
 export const socialMedia = [
-  { src: facebook, alt: "facebook logo" },
-  { src: twitter, alt: "twitter logo" },
-  { src: instagram, alt: "instagram logo" },
+  { src: facebook, alt: "facebook logo", link: "https://www.facebook.com/" },
+  { src: twitter, alt: "twitter logo", link: "https://x.com/" },
+  { src: instagram, alt: "instagram logo", link: "https://www.instagram.com/" },
 ];
